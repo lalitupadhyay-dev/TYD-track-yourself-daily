@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.rotater {
+  animation: rotate 5s ease-in infinite;
+  content: "";
+  position: absolute;
+  height: 500%;
+  width: 150%;
+  top: -200%;
+  left: -25%;
+  background: conic-gradient(
+    at center,
+    transparent,
+    oklch(69.6% 0.17 162.48),
+    oklch(62.3% 0.214 259.815),
+    transparent 30%
+  );
+}
+
+@keyframes rotate {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* for input type calendar to look dark */
+input {
+  color-scheme: dark;
+}
